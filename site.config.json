@@ -1,0 +1,9 @@
+{
+  "name": "RAUMWERK",
+  "slug": "raumwerk",
+  "origin": "https://katharinaheller.github.io",
+  "basePath": "/portfolio-raumwerk/",
+  "routes": ["", "impressum/", "datenschutz/"],
+  "locale": "de-DE",
+  "output": "dist"
+}

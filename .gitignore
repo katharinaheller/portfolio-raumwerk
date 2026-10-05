@@ -1,0 +1,10 @@
+node_modules/
+*.tsbuildinfo
+dist/
+out/
+_site/
+.next/
+.astro/
+.env*
+playwright-report/
+test-results/

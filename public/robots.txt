@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://katharinaheller.github.io/portfolio-raumwerk/sitemap.xml
+

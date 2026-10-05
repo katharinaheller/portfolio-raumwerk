@@ -1,0 +1,13 @@
+{
+  "project": "RAUMWERK",
+  "base": "http://127.0.0.1:4301/",
+  "production": false,
+  "time": "2026-10-05T13:49:31.242Z",
+  "routeCount": 3,
+  "linksChecked": 6,
+  "errors": [],
+  "requestErrors": [],
+  "externalRequests": [],
+  "failures": [],
+  "accessibilityViolations": []
+}
