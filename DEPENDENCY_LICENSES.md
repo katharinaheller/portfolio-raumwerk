@@ -1,6 +1,6 @@
 # Dependency license inventory
 
-Generated from the committed package-lock.json. Package metadata is an inventory, not a substitute for each complete license. Direct dependency notices are retained below; transitive notices remain in installed packages and relevant bundler license comments. No template media is redistributed. Font OFL notices are separately retained in public/fonts.
+Generated from the committed package-lock.json. Package metadata is an inventory, not a substitute for each complete license. Direct dependency notices are retained below; transitive notices remain in installed packages and relevant bundler license comments. No template media is redistributed. Font OFL notices are separately retained in licenses/*-OFL.txt. The static production output also contains third-party-licenses/ and credits.txt.
 
 ## Retained direct dependency notices
 

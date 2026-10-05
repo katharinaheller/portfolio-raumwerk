@@ -58,6 +58,8 @@ Unique German title/description, canonical, Open Graph, Twitter card, local soci
 
 ## Quality evidence
 
+Verified on the public production URL on 2026-10-05: **5/5 functional tests passed**, 3 content routes checked, no console/network/link/image failures and no axe violations in the audited views. Mobile Lighthouse: **99 Performance / 100 Accessibility / 100 Best Practices / 100 SEO**. See the committed machine-readable production reports for scope and timestamps.
+
 Local/production browser audits, screenshots and Lighthouse reports are in `reports/`. Lighthouse figures are single-run mobile lab measurements, not field Core Web Vitals or an INP guarantee. The root PORTFOLIO_OVERVIEW.md records the final verified results. Functional tests live in `tests/`.
 
 ## Open-source and assets
