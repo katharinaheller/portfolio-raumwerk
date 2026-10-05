@@ -12,8 +12,10 @@ test("mobile navigation is usable", async ({ page }) => {
   const menu = page.getByRole("button", { name: "Menü öffnen" });
   await menu.click();
   await expect(menu).toHaveAttribute("aria-expanded", "true");
+  await page.locator("#navigation a").first().focus();
   await page.keyboard.press("Escape");
   await expect(menu).toHaveAttribute("aria-expanded", "false");
+  await expect(menu).toBeFocused();
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,

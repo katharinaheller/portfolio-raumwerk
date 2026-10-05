@@ -1,5 +1,9 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, cp, copyFile } from "node:fs/promises";
 const config = JSON.parse(await readFile("site.config.json", "utf8"));
+await cp("licenses", config.output + "/third-party-licenses", {
+  recursive: true,
+});
+await copyFile("CREDITS.md", config.output + "/credits.txt");
 const base = process.env.BASE_PATH || process.env.NEXT_PUBLIC_BASE_PATH || "/";
 const normalized = base.endsWith("/") ? base : base + "/";
 const origin = process.env.SITE_ORIGIN || config.origin;

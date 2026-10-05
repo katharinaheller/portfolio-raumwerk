@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { GLTFExporter } from "three/addons/exporters/GLTFExporter.js";
-import { NodeIO } from '@gltf-transform/core';
-import { dedup, prune, weld } from '@gltf-transform/functions';
+import { NodeIO } from "@gltf-transform/core";
+import { dedup, prune, weld } from "@gltf-transform/functions";
 import { mkdir, writeFile } from "node:fs/promises";
 // Original procedural architecture, no third-party models or textures.
 globalThis.FileReader = class {
@@ -97,4 +97,6 @@ const document = await io.readBinary(new Uint8Array(buffer));
 await document.transform(dedup(), prune(), weld());
 const optimized = await io.writeBinary(document);
 await writeFile("public/models/pavilion.glb", optimized);
-console.log(`Original GLB: ${buffer.byteLength} bytes; optimized: ${optimized.byteLength} bytes`);
+console.log(
+  `Original GLB: ${buffer.byteLength} bytes; optimized: ${optimized.byteLength} bytes`,
+);

@@ -1,4 +1,6 @@
 node_modules
+docs
+licenses
 dist
 out
 .next
@@ -7,4 +9,3 @@ _site
 public
 reports
 package-lock.json
-

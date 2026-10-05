@@ -11,7 +11,9 @@ menu?.addEventListener("click", () => {
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
+    const focusWasInside = nav?.contains(document.activeElement);
     closeMenu();
+    if (focusWasInside) menu?.focus();
   }
 });
 nav
